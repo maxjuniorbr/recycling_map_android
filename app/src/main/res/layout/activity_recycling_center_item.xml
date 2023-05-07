@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="8dp"
+                                   app:cardBackgroundColor="@android:color/white"
+                                   app:cardCornerRadius="8dp"
+                                   app:cardElevation="4dp"
+                                   app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Nome do centro de reciclagem"/>
+
+        <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                tools:text="Localização do centro de reciclagem"/>
+
+        <TextView
+                android:id="@+id/latTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/locationTextView"
+                app:layout_constraintStart_toStartOf="@+id/locationTextView"
+                app:layout_constraintTop_toBottomOf="@+id/locationTextView"
+                tools:text="Latitude do centro de reciclagem"/>
+
+        <TextView
+                android:id="@+id/lngTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/locationTextView"
+                app:layout_constraintStart_toStartOf="@+id/locationTextView"
+                app:layout_constraintTop_toBottomOf="@+id/latTextView"
+                tools:text="Longitude do centro de reciclagem"/>
+
+        <TextView
+                android:id="@+id/materialsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/lngTextView"
+                app:layout_constraintStart_toStartOf="@+id/lngTextView"
+                app:layout_constraintTop_toBottomOf="@+id/lngTextView"
+                tools:text="Tipos de materiais aceitos no centro de reciclagem"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
